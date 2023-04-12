@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(32, 32, 80);
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+}
+
+.profil li {
+    display: inline;
+    
+}
+.profil a {
+    position: relative;
+    display: inline;
+    font-size: 25px;
+    color: beige;
+    font-weight: 600;
+    margin-left: 70px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.profil a::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: rgb(184, 130, 130);
+    transition: 0.5s; 
+}
+.profil a:hover:before {
+    width: 100%;
+}
+.profil a::after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: rgb(194, 144, 144);
+    transition: 0.6s;
+}
+.profil a:hover::after {
+    width: 100%;
+}
+.profil  a:hover {
+    color: rgb(241, 187, 116);
+}
+nav .profil h1 {
+    margin-left: 10px;
+    font-size: 15px;
+    
+}.checkbtn {
+    font-size: 40px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+.check {
+    display: none;
+}
+
+h1{
+    color: beige;
+}
+
+.folio   {
+   margin-top: 20px;
+}
+img {
+    
+    width: 400px;
+    height: 400px; 
+
+    
+}
+#apropos {
+    margin-top: 6%;
+
+}
+.contenu {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.descript {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 50px;
+    font-size: 25px;
+    background-color: rgb(250, 247, 244);
+   
+}
+h2 {
+    text-align: center;
+    font-family: serif;
+    font-size: 30px;
+    color: #03002b;
+}
+.formation1
+ {
+ background-color: rgb(209, 146, 63);
+ width: 250px;
+ color: white;
+ padding: 8px;
+ text-align: center;
+ border-radius: 5px;
+}
+.formation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 6%;
+    font-size: 25px;
+    background-color: rgb(250, 247, 244);
+
+}
+.skils1 {
+    background-color: rgb(211, 142, 51);
+    width: 250px;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px; 
+    font-size: 25px; 
+}
+.competence {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(250, 247, 244);
+}
+.experience {
+    margin-top: 6%;
+    font-size: 25px;
+    display: flex;
+    background-color: rgb(250, 247, 244);
+    
+
+}
+.experiences {
+    margin-right: 100px;
+}
+.experiences h5{
+    margin-top: 0;
+}
+.date {
+    font-size: 28px;
+    color: rgb(145, 145, 145);
+}
+footer {
+ background-color: rgb(32, 32, 80);
+
+
+}   
+.container {
+width: 100%;
+padding: 70px 30px 20px;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+}
+.icon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #03002b;
+    margin: 10px;
+    border-radius: 50%;
+}
+.icon a i {
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
+}
+.icon a:hover {
+    background-color:rgb(241, 187, 116);
+    transition: 0,5s;
+}
+.icon a:hover i {
+    color: rgb(32, 32, 80);
+    transition: 0,5s;
+}
+.footerNav {
+    margin: 30px 0;
+}
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+}
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0,5s;
+}
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+.Adresses {
+    display: flex;
+    justify-content: center;
+}
+.Adresses a i {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0,5s;  
+}
+.footerBottom {
+    background-color:rgb(32, 32, 80);
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p {
+    color: white;
+}
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+
+@media (max-width: 700px) {
+    header h1 { 
+        font-size: 15px;
+    }
+    nav {
+        justify-content: center;
+    }
+    nav ul {
+        margin-right: ;
+    }
+    
+    #apropos h2 {
+        font-size: 60px;
+        padding-top: 5%;
+    }
+    .contenu {
+        flex-direction: column;
+    
+    }
+    .contenu .descript {
+        width: 90%;
+        
+    }
+    .folio {
+        flex: 1 0 50%;
+    }
+    .descript {
+        margin: 20px 0;
+        font-size: 18px;
+        padding-top: 25px;
+    }
+    .formation {
+        flex-direction: column;
+        width: 100%;
+        margin: 5%;
+        align-items:center;
+    }
+    .formation1 {
+       flex-direction: column;
+        margin: 5%;
+        align-items:center;
+
+    }
+    .competence {
+        flex-direction: column;
+        width: 100%;
+        margin: 5%;
+        align-items:center;
+    }
+    .skils1 {
+        margin: 5%;
+        align-items:center;  
+    }
+    .experience {
+        flex-direction: column;
+        width: 100%;
+        margin: 20%;
+        text-align: center;
+
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        list-style: none;
+        margin: 10px;
+        
+    }
+    
+
+} 
+@media (max-width: 850px) {
+    header h1 { 
+        font-size: 20px;
+    }
+    nav {
+        justify-content: center;
+    }
+    nav ul {
+        display: none;
+    }
+    
+    #apropos h2 {
+        font-size: 80px;
+        padding-top: 10%;
+    }
+    .contenu {
+        flex-direction: column;
+    
+    }
+    .contenu .descript {
+        width: 90%;
+        
+    }
+    .folio {
+        flex: 1 0 50%;
+    }
+    .descript {
+        margin: 20px 0;
+        font-size: 30px;
+        padding-top: 25px;
+    }
+    .formation {
+        display: flex;
+        width: 100%;
+        margin: 5%;
+        align-items:center;
+        
+    }
+    #etudes {
+        font-size: 60px;
+    }
+    .formation1 {
+       flex-direction: column;
+        margin: 5%;
+        align-items:center;
+
+    }
+    .competence {
+        display: flex;
+        width: 100%;
+        margin: 5%;
+        align-items:center;
+    }
+    .skils1 {
+        margin: 5%;
+        align-items:center;  
+    }
+    .experience {
+        flex-direction: column;
+        width: 90%;
+        margin: 10%;
+        text-align: center;
+
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+        list-style: none ;
+    }
+
+
+
+
+}
